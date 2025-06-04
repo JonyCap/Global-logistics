@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment Submissions</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project by Jony</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      height: 100vh;
+      background: radial-gradient(ellipse at center, #0f0f0f 0%, #000000 100%);
+      overflow: hidden;
+      color: #00ffea;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .glow-text {
+      font-size: 20px;
+      color: #00fff7;
+      text-shadow: 0 0 5px #00f2ff, 0 0 10px #00d0ff, 0 0 15px #00bfff, 0 0 25px #00ffff;
+      margin-bottom: 60px;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .glow-button {
+      background: rgba(0, 255, 240, 0.1);
+      border: 2px solid #00ffe7;
+      padding: 15px 25px;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffe7;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .glow-button:hover {
+      background-color: #00ffe7;
+      color: #000000;
+      box-shadow: 0 0 25px #00ffe7, 0 0 40px #00ffe7;
+      transform: scale(1.05);
+    }
+
+    .neon-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(115deg, #0f0f0f, #1a1a1a, #000000);
+      opacity: 0.3;
+      z-index: -1;
+      animation: neonPulse 6s ease-in-out infinite;
+    }
+
+    @keyframes neonPulse {
+      0%, 100% {
+        filter: hue-rotate(0deg);
       }
-      h2 {
-        text-align: center;
+      50% {
+        filter: hue-rotate(90deg);
       }
-      ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      li {
-        margin: 10px 0;
-        padding: 10px;
-        background: #f9f9f9;
-        border-radius: 5px;
-      }
-      a {
-        text-decoration: none;
-        color: #007bff;
-        font-weight: bold;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Global Logistics</h1>
-    <h2>JONY</h2>
-    <ul>
-      <li>
-        Assignment 1:
-        <a href="" target="_blank"
-          >View Submission</a
-        >
-      </li>
-      <li>
-        Assignment 2:
-        <a href="" target="_blank">View Submission</a>
-      </li>
-      <li>
-        Assignment 3:
-        <a href="" target="_blank">View Submission</a>
-      </li>
-      <!-- Add more assignments as needed -->
-    </ul>
-  </body>
+    }
+  </style>
+</head>
+<body>
+  <div class="neon-bg"></div>
+  <div class="glow-text">" PROJECT; BEHIND THE CURTAIN " CREATED BY JONY</div>
+  <div class="button-container">
+    <a class="glow-button" href="https://your-link-to-interactive-web-request.com" target="_blank">Interactive Web Request</a>
+    <a class="glow-button" href="https://your-link-to-prd.com" target="_blank">PRD</a>
+  </div>
+</body>
 </html>
